@@ -47,18 +47,6 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
-
-
-        $url  = request()->url();
-        $next = null;
-
-
-        if($url)
-        {
-            $next = str_replace( config('app.current_url'), config('app.next_url') , $url );
-
-            return redirect( $next ,301 );
-        }
     }
 
     /**

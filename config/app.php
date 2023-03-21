@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Change Website domain to next url'),
+
+    'current_url' => env('CURRECNT_URL'),
+    'next_url'    => env('NEXT_URL'),
 
     /*
     |--------------------------------------------------------------------------
